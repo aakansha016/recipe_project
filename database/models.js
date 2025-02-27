@@ -18,6 +18,7 @@ const recipeVariationSchema = new mongoose.Schema({
 }, { collection: "recipevariations" });
 
 const RecipeVariation = mongoose.model("RecipeVariation", recipeVariationSchema);
+
 // Define User Schema
 const userSchema = new mongoose.Schema({
   username: String,
