@@ -1,13 +1,16 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import RecipeInput from "../components/RecipeInput";
+'use client';
+
+import React from 'react';
+import Navbar from '../components/Navbar';
+import RecipeCreator from '../components/RecipeCreator';
 
 export default function Home() {
   return (
     <main>
-      <Navbar />
-      <Hero />
-      <RecipeInput />
+      <Navbar isOpen={false} onClose={function (): void {
+        throw new Error('Function not implemented.');
+      } } />
+      <RecipeCreator />
     </main>
   );
 }

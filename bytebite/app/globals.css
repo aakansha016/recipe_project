@@ -1,8 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --primary-red: #be0822;
+  --light-pink: #fcd7d0;
+  --beige: #e3d6ca;
+  --white: #fff9f5;
+  --page-bg: #f0b2b9;
+  --text-pink: #ea7580;
+  --green: #A5B192;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
 
 body {
-  background-color: #F0B2B9;
-  font-family: sans-serif;
+  background-color: var(--white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
