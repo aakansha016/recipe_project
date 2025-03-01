@@ -7,9 +7,7 @@ import RecipeCreator from '../components/RecipeCreator';
 export default function Home() {
   return (
     <main>
-      <Navbar isOpen={false} onClose={function (): void {
-        throw new Error('Function not implemented.');
-      } } />
+      <Navbar />
       <RecipeCreator />
     </main>
   );
